@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({
             onClick={() => router.back()}
             className="
               rounded-full 
-              bg- 
+              bg-black 
               flex 
               items-center 
               justify-center 
