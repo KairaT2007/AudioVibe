@@ -35,14 +35,14 @@ const AuthModal = () => {
 
   return (
     <Modal 
-      title="Welcome back" 
-      description="Login to your account." 
+      title="C Возращением" 
+      description="Войдите в свой Аккаунт" 
       isOpen={isOpen} 
       onChange={onChange} 
     >
       <Auth
         supabaseClient={supabaseClient}
-        providers={['github']}
+        providers={[]}
         magicLink={true}
         appearance={{
           theme: ThemeSupa,
@@ -50,7 +50,7 @@ const AuthModal = () => {
             default: {
               colors: {
                 brand: '#404040',
-                brandAccent: '#22c55e'
+                brandAccent: '#7fc7ff'
               }
             }
           }

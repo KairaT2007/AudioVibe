@@ -29,7 +29,7 @@ const LikedContent: React.FC<LikedContentProps> = ({
 
   if (songs.length === 0) {
     return (
-      <div 
+      <div
         className="
           flex 
           flex-col 
@@ -38,15 +38,15 @@ const LikedContent: React.FC<LikedContentProps> = ({
           text-neutral-400
         "
       >
-        No liked songs.
+        Нет любымых треков
       </div>
     )
   }
-  return ( 
+  return (
     <div className="flex flex-col gap-y-2 w-full p-6">
       {songs.map((song: any) => (
-        <div 
-          key={song.id} 
+        <div
+          key={song.id}
           className="flex items-center gap-x-4 w-full"
         >
           <div className="flex-1">
@@ -58,5 +58,5 @@ const LikedContent: React.FC<LikedContentProps> = ({
     </div>
   );
 }
- 
+
 export default LikedContent;
